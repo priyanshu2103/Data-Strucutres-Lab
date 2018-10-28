@@ -1,4 +1,4 @@
-// 5 4 3 3 9 12 4 6 10 --> the testcase
+/+// 5 4 3 3 9 12 4 6 10 --> the testcase
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -6,7 +6,6 @@ int size;
 
 ofstream outfile;
 ifstream infile;
-
 
 void swap(int* a,int* b)
 {
@@ -59,7 +58,7 @@ void selectionSort_swap(int arr[],int left,int right)
 void selectionSort_shift(int arr[],int left,int right)
 {
 	for(int i=left;i<right;i++)
-	{
+	{   
 		int minIndex=i;
 
 		for(int j=i+1;j<=right;j++)
@@ -132,7 +131,6 @@ void mergeSortTopDown(int arr[],int left,int right)
 		return ;
 
 	int mid=(left+right)/2;
-
 	mergeSortTopDown(arr,left,mid);
 	mergeSortTopDown(arr,mid+1,right);
 
@@ -151,9 +149,7 @@ void mergeSortWithInsertion(int arr[],int left,int right)
 	if(right-left<=3)
 		return insertionSort(arr,left,right);
 
-
 	int mid=(left+right)/2;
-
 	mergeSortTopDown(arr,left,mid);
 	mergeSortTopDown(arr,mid+1,right);
 
@@ -176,7 +172,6 @@ void mergeSortBottomUp(int arr[],int left,int right)
 			merge(arr,leftmost,mid,right_end);
 		}
 	}
-
 }
 
 int partition_taking_rightMost(int arr[],int left,int right)
