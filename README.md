@@ -12,4 +12,13 @@ Password for binarySearchTree is : notrequired
 
 
 
-Password for Graphs: solveme
+Password for Graphs: solveme  
+
+
+Password for Hashing : toinfinityandbeyond 
+
+
+Password for AVL: haveabreak 
+
+
+
