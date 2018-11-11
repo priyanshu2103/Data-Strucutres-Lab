@@ -16,6 +16,7 @@ int main(){
     cout << "2. Add new key to the tree" << endl;
     cout << "3. Search a key in the tree" << endl;
     cout << "4. Postorder traversal of the tree" << endl;
+    cout << "5. Inorder traversal of the tree" << endl;
     cout << "Any other choice to exit" << endl;
     cout << "Enter your choice:";
     cin >> choice;
@@ -61,6 +62,14 @@ int main(){
           break;
         }
         tree->postOrderTraversal(tree->root, 0);
+        break;
+
+      case 5:
+        if(tree == NULL){
+          cout << "Create a new tree first" << endl;
+          break;
+        }
+        tree->inOrderTraversal(tree->root, 0);
         break;
 
       default:

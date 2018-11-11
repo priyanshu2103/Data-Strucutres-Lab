@@ -539,6 +539,7 @@ void btree::splitChild(node* x, int i){
   z->setParent(x);
 }
 
+// will print the descending order of the tree
 void btree::postOrderTraversal(node* subtree, int depth){
   // Print the vertical tree for debugging.
   // The number of times '-' illustrate the depth of the node within the tree.
@@ -558,6 +559,7 @@ void btree::postOrderTraversal(node* subtree, int depth){
   }
 }
 
+// will print the keys in ascending order
 void btree::inOrderTraversal(node* subtree, int depth){
   // Print the vertical tree for debugging.
   // The number of times '-' illustrate the depth of the node within the tree.
