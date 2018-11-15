@@ -130,7 +130,7 @@ void preorder(node *root)
 }
 bool avl::insert(int x)
 {
-	//if(search(x)) return false;
+	//if(search(x)) return false; 
 	node *p=this->root;
 	node *temp=new node(x);
 	node *q=NULL;
