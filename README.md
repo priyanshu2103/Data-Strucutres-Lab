@@ -18,7 +18,10 @@ Password for Graphs: solveme
 Password for Hashing : toinfinityandbeyond 
 
 
-Password for AVL: haveabreak 
+Password for AVL: haveabreak   
+
+
+Password for BTree: mogambokhushhua
 
 
 
