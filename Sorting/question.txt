@@ -1,0 +1,70 @@
+How your code should compile:
+
+g++ main.cpp
+
+
+How your code should run:
+
+./a.out <input.txt >output.txt
+
+
+Problem Description:
+
+Modify your implementation of bottom up merge sort to "k" way bottom up merge sort.
+
+Regular bottom up merge sort starts with 'n' lists of size 1. In every iteration, pairs of adjacent lists are merged. List size doubles in every iteration. Finally we get 1 list of size n.
+
+Three way bottom up merge sort differs from regular bottom up merge sort as follows: It merges three adjacent lists at a time. List size will triple after each iteration of three way merge sort. That is initially we will have 'n' lists of size 1, then ceiling(n/3) lists of size 3 and so on. Finally only 1 list of size n.
+
+In general, a k way merge sort merges k adjacent lists at a time. List size will be multiplied by k after each iteration of k way merge sort. That is initially we will have 'n' lists of size 1, then ceiling(n/k) lists of size k and so on. Finally only 1 list of size n.
+
+
+If the value of n is not divisible by the size of list then, last list will have smaller size.
+
+Your k way merge sort should accept following parameters:
+Pointer to array storing the values to be sorted
+Size of array
+Value of k
+Number of iterations to be performed: If value of this parameter is negative then algorithm should continue till whole input is sorted.
+
+
+Your implementation of merge sort should be non-recursive.
+
+Format of input file
+value of k
+number of iterations to be performed
+number of entries to be sorted
+actual entries (one per line)
+
+Example:
+Input    
+3
+2
+10
+700
+100
+90
+20
+130
+290
+3000
+410
+5
+15
+
+Perform three way merge sort, complete only two iterations, input has ten entries.
+
+
+Output
+5
+20
+90
+100
+130
+290
+410
+700
+3000
+15
+
+
